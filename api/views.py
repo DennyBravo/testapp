@@ -8,10 +8,10 @@ from api.serializers import LinkSerializer
 
 @csrf_exempt
 def parse(request):
-    if request.method == 'POST':
-        page_url = request.POST['url']
+    if request.method == "POST":
+        page_url = request.POST["url"]
         links = process_url(page_url)
         serializer = LinkSerializer(links, many=True)
         return JsonResponse(serializer.data, safe=False)
 
-    return HttpResponse('Method not supported')
+    return HttpResponse("Method not supported")

@@ -11,7 +11,7 @@
   line-height: 36px;
 }
 
-.logo-main > span {
+.logo-main>span {
   color: #24a600;
 }
 
@@ -48,13 +48,13 @@
   padding-left: 12px;
 }
 
-.submit-button-container > button {
+.submit-button-container>button {
   white-space: nowrap;
 }
 
 #table-container {
   position: relative;
-  max-width: 1000px; 
+  max-width: 1000px;
   overflow: auto;
   height: calc(100vh - 150px);
   overflow-y: scroll;
@@ -104,6 +104,7 @@ td {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
