@@ -1,0 +1,110 @@
+.logo {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-right: 24px;
+}
+
+.logo-main {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.logo-main > span {
+  color: #24a600;
+}
+
+.logo-sub {
+  font-size: 14px;
+  color: #808080;
+  text-align: right;
+}
+
+.main-input-container {
+  display: flex;
+  align-items: center;
+}
+
+.main-input {
+  background: #24a600;
+  width: 100%;
+  padding: 8px 8px 2px;
+  border-radius: 4px;
+}
+
+#resultsCounter {
+  color: white;
+  font-size: 14px;
+  margin: 4px 0;
+  height: 22px;
+}
+
+.main-input-inner {
+  display: flex;
+}
+
+.submit-button-container {
+  padding-left: 12px;
+}
+
+.submit-button-container > button {
+  white-space: nowrap;
+}
+
+#table-container {
+  position: relative;
+  max-width: 1000px; 
+  overflow: auto;
+  height: calc(100vh - 150px);
+  overflow-y: scroll;
+}
+
+.table {
+  table-layout: fixed;
+}
+
+.fix-header {
+  position: sticky;
+  top: 0;
+  background-color: white !important;
+}
+
+.loader {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.loader.visible {
+  display: inline-block;
+}
+
+.loader:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #24a600;
+  border-color: #24a600 transparent #24a600 transparent;
+  animation: loader 1.2s linear infinite;
+}
+
+td {
+  word-wrap: break-word;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
